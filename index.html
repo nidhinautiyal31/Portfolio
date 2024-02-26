@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Nidhi Nautiyal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="image/favicon_io/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>|Graphic Designer|</p>
+          <h1>Hi, I'm Nidhi Nautiyal<br />from Dehradun</h1>
+        </div>
+        <div class="cursor"></div>
+      </div>
+    </div>
+
+    <!-- -------------about---------------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="about-col-1">
+            <img
+              class="image"
+              src="assets/creative-logo-with-pencil-surrou_clipdrop-background-removal-transformed.png"
+              alt=""
+            />
+          </div> -->
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello! I'm Nidhi Nautiyal, a passionate and creative graphic
+              designer with a flair for visual storytelling. With over 1 year of
+              experience in the design industry, I've had the privilege of
+              working with clients from diverse backgrounds, helping them bring
+              their ideas to life through stunning visuals. I believe that
+              design is not just about making things look good; it's about
+              effectively communicating a message. I have a knack for
+              translating complex ideas into simple and elegant designs that
+              resonate with the target audience.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab( 'skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab( 'Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab( 'Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span> Graphic Designer</span><br />
+                  Logo Design and Branding Expertise for Memorable
+                  Identities.<br />
+                  Digital Graphics for Engaging Social Media and
+                  Illustrations.<br />
+                  Proficient in Adobe Creative Suite for Design Precision
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span> Web Development </span><br />
+                  Crafting visually appealing and functional websites, including
+                  UI/UX design and responsiveness.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span> Art And Craft </span><br />
+                  Creating unique and handmade artistic pieces and crafts with a
+                  flair for creativity and precision.
+                </li>
+              </ul>
+            </div>
+            <!-- ------------------- experience----------------- -->
+
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span> Graphic Designer</span><br />
+                  1 year
+                </li>
+                <li>
+                  <span> Web Development</span><br />
+                  Three month
+                </li>
+                <li>
+                  <span>Art And Craft</span><br />
+                  Two year
+                </li>
+              </ul>
+            </div>
+            <!-- ---------------education---------- -->
+
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>College</span><br />
+                  Bachelor of Fine Arts
+                </li>
+                <li>
+                  <span> School</span><br />
+                  Shri Guru Ram Rai Public School
+                </li>
+                <!-- <li>
+                  <span> ILLUSTRATOR/PHOTOSHOP</span><br />
+                  Graphic Designer
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <!-- <div>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Logo Design</h2>
+            <p>
+              Your logo is the face of your brand. I specialize in creating
+              unique and memorable logos that leave a lasting impression.
+            </p>
+            <a href="logodesign.html">Learn more</a>
+          </div> -->
+          <div>
+            <i class="fa-regular fa-image"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              From business cards to brochures, I design print materials that
+              make your business stand out in a crowded marketplace.
+            </p>
+            <a href="graphicdesign.html">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              In today's digital age, your website is often the first
+              interaction potential customers have with your brand. I create
+              responsive and user-friendly websites that captivate and engage
+              visitors.
+            </p>
+            <a href="web.html">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-palette"></i>
+            <h2>Art and Craft</h2>
+            <p>
+              Creating unique and handmade artistic pieces and crafts with a
+              flair for creativity and precision.
+            </p>
+            <a href="artandcraft.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------portfolio--------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/webdesign-vector-illustration-wo (1).png" alt="" />
+            <div class="layer">
+              <h3>Web Design</h3>
+              <p>
+                "Crafting captivating digital experiences through web development expertise."
+              </p>
+              <a href="webdesign.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/graphic1.png" alt="" />
+            <div class="layer">
+              <h3>Graphic Design</h3>
+              <p>
+                "Transforming ideas into visually captivating and memorable experiences through graphic design."
+              </p>
+              <a href="graphic.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/art1.png" alt="" />
+            <div class="layer">
+              <h3>Art And Craft</h3>
+              <p>
+                "Expressing the beauty of the world through my artistry."
+              </p>
+              <a href="artwork.html"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------contact------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >nidhinautiyal01731@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>7078798377 / 7088501122</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/imcutix?mibextid=ZbWKwL"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://instagram.com/imnidhinautiyal_?igshid=MzMyNGUyNmU2YQ=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a
+              href="assets/NIDHI NAUTIYAL-1.pdf.pdf"
+              download
+              class="btn btn2"
+              >DOWNLOAD CV</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                email="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+      });
+    </script>
+  </body>
+</html>

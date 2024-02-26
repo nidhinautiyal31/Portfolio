@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mywork</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+  <div class="main">
+   <h1>My Art</h1>
+    <hr>
+    
+    <h2>PORTFOLIO</h2>
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="assets/drawing.jpeg" alt="Mountains" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="assets/drawing1.jpeg" alt="Lights" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="assets/drawing2.jpeg" alt="" style="width:100%">
+          
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="assets/drawing3.jpeg" alt="" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="assets/drawing4.jpeg" alt="" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="assets/drawing5.jpeg" alt="" style="width:100%">
+         
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="assets/drawing6.jpeg" alt="" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="assets/drawing7.jpeg" alt="" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="assets/drawing8.jpeg" alt="" style="width:100%">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+   
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+    </body>
+    </html>
+
+
+
+
+
+
+
+

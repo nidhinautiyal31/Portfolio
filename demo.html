@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2>All Work</h2>
+    <div class="tab">
+      <button class="tablinks active" onclick="openCity(event, 'Web Design')">
+        Web Design
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Art And Craft')">
+        Art And Craft
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Graphic Design')">
+        Graphic Design
+      </button>
+    </div>
+    <div style="margin-top: 100px">
+      <div id="Web Design" class="tabcontent active">
+        <div class="content">
+          <img src="assets/drawing2.jpeg" alt="Mountains" style="width: 100%" />
+          <h4>Web Design</h4>
+        </div>
+        <div class="content">
+          <img src="assets/drawing3.jpeg" alt="Mountains" style="width: 100%" />
+          <h4>Art And Craft</h4>
+        </div>
+      </div>
+
+      <div id="Graphic Design" class="tabcontent">
+        <div class="column nature">
+          <div class="content">
+            <img src="assets/art1.png" alt="Nature" style="width: 100%" />
+            <h4>Graphic Design</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+</html>

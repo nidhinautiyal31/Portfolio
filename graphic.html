@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mywork</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="main">
+    <h1>Graphic Work</h1>
+    <hr>
+    <h2>PORTFOLIO</h2>
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="image/123-01 (1).png" alt="Mountains" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="image/Software-01 (1).png" alt="Lights" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+            <img src="image/oxgen new file (1).jpg" alt="" style="width:100%">
+          
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="image/photo (1).jpg" alt="" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+            <img src="image/WhatsApp Image 2023-10-02 at 8.20.41 AM.jpeg" alt="" style="width:100%">
+        
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="image/facewash poster 1 (1).png" alt="" style="width:100%">
+          
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="image/banner socal11_ (1).png" alt="" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/banner product11_.png" alt="" style="width:100%">
+          
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/banner facewash 2 (1).png" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/Creative Square (1) copy.png" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/Creative2.png" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/WhatsApp Image 2023-10-02 at 8.21.43 AM (1).jpeg" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/Add a subheading (1).png" style="width:100%">
+         
+        </div>
+      </div><div class="column people">
+        <div class="content">
+        <img src="image/Add a subheading (2).png" style="width:100%">
+          
+        </div>
+      </div><div class="column people">
+        <div class="content">
+        <img src="image/Add a subheading (3).png" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/Add a heading.png" style="width:100%">
+         
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="image/Add a heading (1).png" style="width:100%">
+         
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+   
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+    </body>
+    </html>
+
+
+
+
+
+
+
+

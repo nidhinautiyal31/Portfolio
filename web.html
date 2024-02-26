@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+    <div id="headerweb">
+      <div class="container">
+        <nav>
+          <img src="" alt="" />
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="# about">About</a></li>
+            <li><a href="# portfolio">Portfolio</a></li>
+            <li><a href="# contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Development</p>
+          <h1>Hi, i'm <span>Nidhi</span> <br />Nautiyal from Dehradun</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img class="image" src="assets/web1.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">Web Development</h1>
+            <p>
+              Logo Design: Crafting memorable and distinctive logos that
+              represent your brand identity. Branding: Creating cohesive brand
+              guidelines, including color schemes, typography, and visual
+              elements. Print Design: Designing brochures, flyers, posters, and
+              other promotional materials. Packaging Design: Developing
+              eye-catching packaging concepts that stand out on the shelf.
+            </p>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------work-------------------------- -->
+
+      <div class="main">
+        <h1>Web Design Work</h1>
+        <hr>
+       
+        <div class="row">
+        <div class="column nature">
+          <div class="content">
+          <img src="assets/web8.png" alt="Lights" style="width:100%">
+           
+          </div>
+        </div>
+        
+        <div class="column cars">
+          <div class="content">
+            <img src="assets/web5.png" alt="" style="width:100%">
+           
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+              <img src="assets/web9.png" alt="" style="width:100%">
+          
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="assets/web11.png" alt="" style="width:100%">
+            
+          </div>
+        </div>
+        
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="assets/web4.png"  alt="" style="width:100%">
+            
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="assets/web10.png" style="width:100%">
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+      
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+      }
+      
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      
+      
+     
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+   
+  </body>
+</html>
